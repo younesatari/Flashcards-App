@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200;1,300&display=swap');
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   outline:0;
+}
+
+body{
+   font-family: 'Montserrat', sans-serif;
+   color: #fff;
+   min-height: 100vh;
+   background-image: linear-gradient(to right bottom, rgba(52, 73, 94,.9), rgba(44, 62, 80,.8)), url('image.jpeg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: repeat;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 30px;
+}
+
+.container{
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+}
+
+.header{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 40px;
+}
+
+.header h1{
+   text-transform: uppercase;
+   font-size: 30px;
+   margin-bottom: 15px;
+}
+
+.header button{
+   width: 100%;
+   padding: 10px;
+   background-color: #fff;
+   border: none;
+   font-size: 15px;
+   border-radius: 15px;
+   box-shadow: 0 4px 2px rgba(0, 0, 0, .2);
+   cursor: pointer;
+}
+
+.feedback{
+   background: #fff;
+   color: #e74c3c;
+   text-align: center;
+   margin-bottom: 10px;
+   padding: 16px;
+   width: 300px;
+   border-radius: 15px;
+   box-shadow: 0 3px 2px rgba(0, 0, 0, .4);
+   display: none;
+}
+
+.modal{
+   margin-bottom: 40px;
+   padding: 12px;
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+   width: 80%;
+   border-radius: 15px;
+   box-shadow: 0 4px 2px rgba(0, 0, 0, .7);
+}
+
+.modal span{
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   font-size: 25px;
+   cursor: pointer;
+}
+
+.modal .control-form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 40px;
+}
+
+.modal .control-form label{
+   font-size: 16px;
+   margin-bottom: 8px;
+}
+
+.modal .control-form textarea{
+   background: transparent;
+   color: #fff;
+   font-size: 18px;
+   padding: 7px;
+}
+
+.answer{
+   margin-bottom: 20px;
+}
+
+.window-btn{
+   width: 100%;
+   padding: 10px;
+   background-color: #fff;
+   border: none;
+   font-size: 15px;
+   border-radius: 15px;
+   box-shadow: 0 4px 2px rgba(0, 0, 0, .2);
+   cursor: pointer;
+}
+
+
+.list-items{
+   width: 90vw;
+   margin: 15px auto;
+   max-width: 1100px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   /* grid-template-columns: repeat(4, 1fr); 
+   --> Hna Galt Lih bali baghi 4 dyal colums w kanlin size wa7ad 1fr */
+   /* grid-template-columns: 1fr 1fr 1fr 1fr;*/
+   grid-column-gap: 1.5rem;
+   grid-row-gap: 2rem;
+   
+}
+
+.item{
+   list-style-type: none;
+   background: transparent;
+   margin-right: 25px;
+   margin-bottom: 25px;
+   padding: 30px;
+   box-shadow: 1px 5px 2px rgba(0, 0, 0, .7);
+   display: flex;
+   flex-direction: column;
+}
+
+.item-question, .item-answer{
+   margin-bottom: 15px;
+   font-size: 20px;
+   text-align: center;
+}
+
+.item-answer{
+   margin-top: 15px;
+}
+
+.display{
+   display: none;
+}
+
+.show-hide-btn{
+   width: 100%;
+   padding: 10px;
+   background-color: #fff;
+   margin-bottom: 15px;
+   border: none;
+   font-size: 15px;
+   border-radius: 15px;
+   box-shadow: 0 4px 2px rgba(0, 0, 0, .2);
+   cursor: pointer;
+}
+
+.btns{
+   display: flex;
+   align-items: center;
+}
+
+.btns button{
+   padding: 7px;
+   background-color: #fff;
+   border: none;
+   font-size: 15px;
+   border-radius: 15px;
+   box-shadow: 0 4px 2px rgba(0, 0, 0, .2);
+   cursor: pointer;
+}
+
+.delete{
+   margin-left: auto;
+}

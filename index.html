@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FlashCards app</title>
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+   integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+   crossorigin="anonymous"
+   />
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <!-- HEADER -->
+      <div class="header">
+         <h1>Flashcards</h1>
+         <button class="open-window">Add Question</button>
+      </div>
+      <div class="feedback"></div>
+      <!-- MODAL -->
+      <div class="modal">
+         <span><i class="fas fa-window-close"></i></span>
+         <form id="form">
+            <div class="control-form">
+               <label>Question</label>
+               <textarea type="textarea" class="question"></textarea>
+            </div>
+            <div class="control-form">
+               <label>Answer</label>
+               <textarea type="textarea" class="answer"></textarea>
+            </div>
+            <button class="window-btn" type="submit">Save</button>
+         </form>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+         <ul class="list-items"></ul>
+   </div>
+   </div>
+   
+   <script src="app.js"></script>
+</body>
+</html>
